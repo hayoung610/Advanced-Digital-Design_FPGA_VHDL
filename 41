@@ -1,0 +1,27 @@
+
+idle: if (din = 0) then{
+                goto Error;}
+      else if (yin=0) then{
+                goto zero;}
+      else {
+            goto load;}
+zero:   q = 0;
+        r = 0;
+        return(q,r)
+load:   y = yin;
+        d = din;
+        q = 0;
+        r = 0;
+        if (d < y) or (d = y) then {
+                goto op;}
+        else {
+            goto stop;}
+op:     q = q + 1;
+        y = y - d;
+        if (d > y) then {
+                goto stop;}
+        else {
+            goto op;}
+stop:   r = y;
+        return (q,r)
+Error: return(error)

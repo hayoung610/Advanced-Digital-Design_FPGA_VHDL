@@ -1,0 +1,28 @@
+# XilinxIntro.ucf
+# Connect ports to FPGA pins as specified in the Spartan3 starter board manual
+
+# Connect switch<0> with location F12 in fpga board
+NET "switches<0>" LOC="F12" ; 
+NET "switches<1>" LOC="G12" ;
+NET "switches<2>" LOC="H14" ;
+NET "switches<3>" LOC="H13" ;
+# Added four more switches 4 to7 to implement all switches
+NET "switches<4>" LOC="J14" ;
+NET "switches<5>" LOC="J13" ;
+NET "switches<6>" LOC="K14" ;
+NET "switches<7>" LOC="K13" ;
+
+# Connect switch<0> with location M13 in fpga board
+NET "buttons<0>" LOC="M13" ;
+NET "buttons<1>" LOC="M14" ;
+
+# Connect leds<0> with location K12 in fpga board
+NET "leds<0>" LOC="K12" ;
+NET "leds<1>" LOC="P14" ;
+NET "leds<2>" LOC="L12" ;
+NET "leds<3>" LOC="N14" ;
+# Added four more leds 4 to7 to implement all leds
+NET "leds<4>" LOC="P13" ;
+NET "leds<5>" LOC="N12" ;
+NET "leds<6>" LOC="P12" ;
+NET "leds<7>" LOC="P11" ; 

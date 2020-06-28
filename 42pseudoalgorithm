@@ -1,0 +1,18 @@
+
+idle: 
+load: n = 0;
+      tmp = 8;
+      a = signal_in;
+     if (a(7) = 1) then{
+     goto stop;}
+     else{
+        goto count;}
+count: n = n+1;
+       tmp = tmp -1;
+       if (tmp = 0) then{
+            goto stop;}
+       else if (a(tmp -1) = 1) then{
+            goto stop;}
+       else{
+            goto count;}
+stop: return(n)

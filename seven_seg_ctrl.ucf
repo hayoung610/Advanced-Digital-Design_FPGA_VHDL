@@ -1,0 +1,30 @@
+#seven_seg_ctrl.ucf
+
+# Slide switches 
+NET "switches<0>" LOC="F12" ;
+NET "switches<1>" LOC="G12" ;
+NET "switches<2>" LOC="H14" ;
+NET "switches<3>" LOC="H13" ;
+NET "switches<4>" LOC="J14" ;
+NET "switches<5>" LOC="J13" ;
+NET "switches<6>" LOC="K14" ;
+NET "switches<7>" LOC="K13" ;
+
+# 7 segment signal 
+NET "segments<0>" LOC = "N16";
+NET "segments<1>" LOC = "F13";
+NET "segments<2>" LOC = "R16";
+NET "segments<3>" LOC = "P15";
+NET "segments<4>" LOC = "N15";
+NET "segments<5>" LOC = "G13";
+NET "segments<6>" LOC = "E14";
+
+# Analog Selection Signal
+NET "an_sel<0>" LOC = "D14";
+NET "an_sel<1>" LOC = "G14";
+NET "an_sel<2>" LOC = "F14";
+NET "an_sel<3>" LOC = "E13";
+
+
+NET "gclk" LOC= "T9" ;
+NET "rst" LOC= "M13" ;
